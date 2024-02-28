@@ -1,0 +1,344 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.sections{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section {
+    height: 100vh;
+    box-sizing: border-box;
+    width: 100vw;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.section:nth-child(odd) {
+    background-color:black;
+}
+
+/* SIDEBAR */
+.loaders.two {
+    position: fixed;
+    top: 40%;
+    left: 93%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+}
+
+.loaders.two .dots {
+	height: 30px;
+	width: 30px;
+	background: #000;
+	border-radius: 15px;
+	background:  #ff6200;
+    margin: 10px;
+}
+
+.loaders.two .first.dots{
+    margin: 10px;
+	background: #ff8533;
+}
+
+.loaders.two .second.dots {
+    margin: 10px;
+	background: #ffa366;
+}
+.loaders.two .third.dots {
+	background: #F76A4D;
+}
+
+.loaders.two .fourth.dots{
+    background-color: #bb650e;
+}
+
+/* SECTION ONE */
+.title-image img {
+    width: 300px;
+    height: 365px;
+    border: 5px solid #f0f0f0;
+    margin: 20px;
+    filter: grayscale(100%); 
+}
+
+#title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+.title {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    position: relative;
+}
+
+.logo {
+    position: relative;
+    top: 0%; 
+    left: 0%;
+    font-size: 35px;
+    font-family: 'Domine', sans-serif;
+    color: whitesmoke;
+  }
+
+.description{
+    border-top: 2px solid #ff6200;
+    border-bottom: 2px solid #ff6200;
+  }
+
+/* SECTION TWO */
+
+#education-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .bold-text {
+    font-weight: bold; 
+  }
+
+  .edu-title {
+    position: relative;
+    top: 0%; 
+    left: 0%;
+    font-size: 35px;
+    font-family: 'Domine', sans-serif;
+    color: black;
+    margin-right: 80px;
+}
+
+.content-education{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    position: relative; 
+    margin-right: 20px;  
+}
+
+#Coursework{
+    opacity: 0;
+}
+#Education-University{
+    opacity: 0;
+}
+#edu-logo{
+    border-bottom: 2px solid #ff8533;
+    border-top: 2px solid #ff8533;
+    opacity: 0;
+}
+.edu-logo-active{
+    animation-name: tavee;
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
+ }
+
+.Coursework-active {
+	animation-name: ravee;
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
+}
+
+.Education-University-active{
+    animation-name: wavee;
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
+}
+/* SECTION THREE */
+#work-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.w-bold-text{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.w-i-text{
+    font-style: italic;
+}
+.work-title {
+    position: relative;
+    margin: 30px;
+    font-size: 35px;
+    font-family: 'Domine', sans-serif;
+    color: white;
+    margin-right: 80px;
+}
+
+.content-work{
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    position: relative;   
+}
+
+#scholastic{
+    opacity: 0;
+}
+#app{
+    opacity: 0;
+}
+#work-logo{
+    border-bottom: 2px solid #ffa366;
+    border-top: 2px solid #ffa366;
+    opacity: 0;
+}
+.work-logo-active{
+    animation-name: tavee;
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
+ }
+
+.scholastic-active {
+	animation-name: wavee;
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
+}
+
+.app-active{
+    animation-name: ravee;
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
+}
+
+/* SECTION 4 */
+#skills-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+
+.skills-title {
+    position: relative;
+    top: 0%; 
+    left: 0%;
+    margin: 30px;
+    font-size: 35px;
+    font-family: 'Domine', sans-serif;
+    color: black;
+    margin-right: 80px;
+}
+
+.skills-category{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    opacity: 0.8;
+    margin-right: 100px;
+    position: relative;   
+}
+
+#pl{
+    opacity: 0;
+}
+
+#ts{
+    opacity: 0;
+}
+ .pl-active{
+    animation-name: wavee;
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
+ }
+
+.ts-active {
+	animation-name: ravee;
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
+}
+
+.skills-logo-active{
+    animation-name: tavee;
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
+}
+
+#skills-logo{
+    opacity: 0;
+    border-bottom: 2px solid #F76A4D;
+    border-top: 2px solid #F76A4D;
+}
+
+/* SECTION 4 */
+#connect-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.connect-title {
+    position: relative;
+    margin: 30px;
+    font-size: 35px;
+    font-family: 'Domine', sans-serif;
+    color: white;
+}
+
+.connect-category{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    position: relative;   
+}
+
+ .connect-active{
+    animation-name: ravee;
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
+ }
+
+.connect-logo-active{
+    animation-name: wavee;
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
+}
+
+#connect-logo{
+    opacity: 0;
+    border-bottom: 2px solid #bb650e;
+    border-top: 2px solid #bb650e;
+}
+
+#connect{
+    opacity: 0;
+}
+
+
+@keyframes tavee {
+    0% { transform: translateX(-60px);}
+	100%{ transform: translateX(0px);}
+}
+
+@keyframes wavee {
+    0% { transform: translateY(-100px);}
+	100%{ transform: translateY(0px);}
+}
+@keyframes ravee {
+    0% { transform: translateY(100px);}
+	100%{ transform: translateY(0px);}
+}
